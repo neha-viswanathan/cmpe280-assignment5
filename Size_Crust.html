@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Online Ordering - MyPizza</title>
+
+  <style type="text/css">
+  #container {
+  	background-color: #0099cc;
+  }
+
+  #optionBar {
+  	width: 900px;
+  	background-color: #0099cc;
+  	height: 70px;
+  	padding-left: 120px;
+  }
+
+  #opt1 {
+  	float:left;
+    position:relative;
+    left:15%;
+    background-image:url('images/red1.gif');
+    width:300px;
+    height:70px;
+    background-size: 300px 70px;
+  }
+
+   #opt2 {
+  	float: left;
+  	position: relative;
+  	left: 7%;
+  	background-image: url('images/blue2.gif');
+  	width: 300px;
+  	height: 70px;
+  	background-size: 300px 70px; 
+  }
+
+   #opt3 {
+  	float: left;
+  	position: relative;
+  	left: 0%;
+  	background-image: url('images/blue1.gif');
+  	width: 300px;
+  	height: 70px;
+  	background-size: 300px 70px; 
+  }
+
+  h3 {
+  	color: #ffffff;
+  	font-family: "Arial Narrow",Helvetica,sans-serif;
+  	text-shadow: 2px 2px 4px #000000;
+  }
+
+  h2 {
+  	color: #009999;
+  	font-family: "Arial",Helvetica,sans-serif;
+  	text-shadow: 1px 1px;
+  }
+
+  h4 {
+  	color: #009999;
+  	font-family: "Arial Narrow",Helvetica,sans-serif;
+  }
+
+  #text {
+  	background-color: #fff;
+  	width: 900px;
+  	height: 500px;
+  	margin: auto;
+  	padding-top: 15px;
+  	font-family: "Arial Narrow",Helvetica,sans-serif;
+  }
+
+  #ht {
+  	float:left;
+    width:20%;
+    height:200px;
+    border-right-style: ridge;
+    border-right-color: #bfbfbf;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  #hp {
+  	float:left;
+    position:relative;
+    width:20%;
+    height:200px;
+    border-right-style: ridge;
+    border-right-color: #bfbfbf;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+   #ctc {
+  	float:left;
+    position:relative;
+    width:20%;
+    height:200px;
+    border-right-style: ridge;
+    border-right-color: #bfbfbf;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  #bs {
+  	float:left;
+    position:relative;
+    width:20%;
+    height:200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  #gfc {
+  	float:left;
+    position:relative;
+    width:20%;
+    height:200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  #click {
+  	background-color: #0099cc;
+  	width: 20%;
+  	height: 100px;
+  	margin: auto;
+  	text-align: center;
+  	padding-top: 20px;
+  }
+
+  .c {
+  	display: inline-block;
+  	font-size: 100%;
+  	width: 100px;
+  	height: 50px;
+  	background-color: black;
+  	color: white;
+  }
+  </style>
+
+  <script type="text/css">
+  function clear() {
+    var rad = document.getElementsByName("size");  
+    for (var i = 0, length = rad.length; i < length; i++) {
+        if (rad[i].checked) {    
+            rad[i].checked = false;
+            break;
+        }
+    }  
+  }
+  </script> 
+  </head>
+  <body>
+  
+  	<div id="container" >
+  		<div>
+  			<h1 align="center" > Build your Own Pizza </h1>
+  		</div>
+  		<div id="optionBar" align="center">
+  			<div id="opt1"><h3><center>SIZE & CRUST</center></h3></div>
+  			<div id="opt2"><h3><center>CHEESE & SAUCE</center></h3></div>
+  			<div id="opt3"><h3><center>TOPPINGS</center></h3></div>
+  		</div>
+  		<br>
+  		<form id="sizeCrust" action="Cheese_Sauce.html">
+  			<div id="text">
+  				<div><h2 align="center"> CHOOSE SIZE AND CRUST </h2></div>
+  				<div id="row">
+  					<div id="ht">
+  						<h4>HAND TOSSED</h4>
+  						<p>Garlic-seasoned crust with a rich, buttery taste.</p>
+  						<input type="radio" name="size" value="htsmall"/>Small (10") <br/>
+  						<input type="radio" name="size" value="htmed"/>Medium (12") <br/>
+  						<input type="radio" name="size" value="htlarge" />Large (14") <br/>
+  						<input type="radio" name="size" value="htxl"/>X-Large (16") <br/>
+  					</div>
+
+  					<div id="hp">
+  						<h4>HANDMADE PAN</h4>
+  						<p>Two layers of cheese, toppings to the edge, and a crust that bakes up golden and crispy with a buttery taste.</p>
+  						<input type="radio" name="size" value="hpmed"/>Medium (12") <br/>
+  					</div>
+
+  					<div id="ctc">
+  						<h4>CRUNCHY THIN CRUST</h4>
+  						<p>Thin enough for the optimum crispy to crunchy ratio.</p>
+  						<input type="radio" name="size" value="ctcmed"/>Medium (12") <br/>
+  						<input type="radio" name="size" value="ctclarge"/>Large (14") <br/>
+  					</div>
+
+  					<div id="bs">
+  						<h4>BROOKLYN STYLE</h4>
+  						<p>Hand stretched to be big, thin and perfectly foldable.</p>
+  						<input type="radio" name="size" value="bsmed"/>Medium (12") <br/>
+  						<input type="radio" name="size" value="bslarge"/>Large (14") <br/>
+  					</div>
+
+  					<div id="gfc">
+  						<h4>GLUTEN FREE CRUST</h4>
+  						<p>Domino's pizza made with a Gluten Free Crust.</p>
+  						<input type="radio" name="size" value="gfclarge"/>Large (14") <br/>
+  						<input type="radio" name="size" value="gfcxl"/>X-Large (16") <br/>
+  					</div>
+				  </div>
+  			</div>
+  			<div id="click">
+<button  class="c" type="submit">Build</button>
+<!-- <button  class="c" type="reset">Cancel</button> -->
+<button  class="c" type="button" onclick="clear()">Cancel</button>
+</div>
+  		</form>
+  	</div>	
+  </body>
+</html>

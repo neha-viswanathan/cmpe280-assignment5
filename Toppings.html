@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Ordering - MyPizza</title>
+  <style type="text/css">
+  	#container {
+  	background-color: #0099cc;
+  }
+
+  #optionBar {
+  	width: 900px;
+  	background-color: #0099cc;
+  	height: 70px;
+  	padding-left: 120px;
+  }
+
+  #opt1 {
+  	float:left;
+    position:relative;
+    left:15%;
+    background-image:url('images/red1.gif');
+    width:300px;
+    height:70px;
+    background-size: 300px 70px;
+  }
+
+  #opt4 {
+  	float: left;
+  	position: relative;
+  	left: 7%;
+  	background-image: url('images/red3.gif');
+  	width: 300px;
+  	height: 70px;
+  	background-size: 300px 70px; 
+  }
+
+  #opt5 {
+  	float: left;
+  	position: relative;
+  	left: 0%;
+  	background-image: url('images/red2.gif');
+  	width: 300px;
+  	height: 70px;
+  	background-size: 300px 70px;
+  }
+
+
+  #text {
+  	background-color: #fff;
+  	width: 900px;
+  	height: 400px;
+  	margin: auto;
+  	padding-top: 15px;
+  	font-family: "Arial Narrow",Helvetica,sans-serif;
+  }
+
+  #chk3{
+  	float:left;
+    width:40%;
+    height:200px;
+    border-right-style: ridge;
+    border-right-color: #bfbfbf;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-family: "Arial Narrow",Helvetica,sans-serif;
+  }
+
+  #chk4 {
+  	float:left;
+    position:relative;
+    width:40%;
+    height:200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  #click {
+  	background-color: #0099cc;
+  	width: 20%;
+  	height: 100px;
+  	margin: auto;
+  	text-align: center;
+  	padding-top: 20px;
+  }
+
+  .c {
+  	display: inline-block;
+  	font-size: 100%;
+  	width: 100px;
+  	height: 50px;
+  	background-color: black;
+  	color: white;
+  }
+
+  h3 {
+  	color: #ffffff;
+  	font-family: "Arial Narrow",Helvetica,sans-serif;
+  	text-shadow: 2px 2px 4px #000000;
+  }
+
+  h2 {
+  	color: #009999;
+  	font-family: "Arial",Helvetica,sans-serif;
+  	text-shadow: 1px 1px;
+  }
+
+  h4 {
+  	color: #009999;
+  	font-family: "Arial Narrow",Helvetica,sans-serif;
+  }
+
+  </style>
+  
+  </head>
+  <body>
+  	<div id="container" >
+  		<div>
+  			<h1 align="center" > Build your Own Pizza </h1>
+  		</div>
+  		<div id="optionBar" align="center">
+  			<div id="opt1"><h3><center>SIZE & CRUST</center></h3></div>
+  			<div id="opt4"><h3><center>CHEESE & SAUCE</center></h3></div>
+  			<div id="opt5"><h3><center>TOPPINGS</center></h3></div>
+  		</div>
+  		<br>
+  		<form id="cheeseSauce" action="Dashboard.html">
+  			<div id="text">
+  				<div><h2 align="center"> CHOOSE TOPPINGS </h2></div>
+  				<div id="row">
+  					<div id="chk3">
+  						<h4>CHOOSE MEATS</h4>
+  						<table width="100%">
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Pepperoni"/>Pepperoni<br/></td>
+  							<td><input type="checkbox" name="topp" value="Salami"/>Salami<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Italian Sausage"/>Italian Sausage<br/></td>
+  							<td><input type="checkbox" name="topp" value="Bacon"/>Bacon<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Sliced Italian Sausage" />Sliced Italian Sausage<br/></td>
+  						</tr>	
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Beef"/>Beef<br/></td>
+  						</tr>	
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Philly Steak"/>Philly Steak<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Ham"/>Ham<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Premium Chicken"/>Premium Chicken<br/></td>
+  						</tr>
+  						</table>
+  					</div>
+  					<div id="chk4">
+  						<h4>CHOOSE NON-MEATS</h4>
+  						<table width="100%">
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Cheddar Cheese"/>Cheddar Cheese<br/></td>
+  							<td><input type="checkbox" name="topp" value="Green Peppers"/>Green Peppers<br/></td>
+  						</tr>
+  						<tr>	
+  							<td><input type="checkbox" name="topp" value="Feta Cheese"/>Feta Cheese<br/></td>
+  							<td><input type="checkbox" name="topp" value="Jalapeno Peppers"/>Jalapeno Peppers<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Shredded Parmesan Asiago"/>Shredded Parmesan Asiago<br/></td>
+  							<td><input type="checkbox" name="topp" value="Mushrooms"/>Mushrooms<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Shedded Provolone Cheese"/>Shedded Provolone Cheese<br/></td>
+  							<td><input type="checkbox" name="topp" value="Pineapple"/>Pineapple<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Banana Peppers"/>Banana Peppers<br/></td>
+  							<td><input type="checkbox" name="topp" value="Onions"/>Onions<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Black Olives" />Black Olives<br/></td>
+  							<td><input type="checkbox" name="topp" value="Roasted Red Peppers" />Roasted Red Peppers<br/></td>
+  						</tr>
+  						<tr>
+  							<td><input type="checkbox" name="topp" value="Garlic" />Garlic<br/></td>
+  							<td><input type="checkbox" name="topp" value="Spinach"/>Spinach<br/></td>
+  						</tr>
+  						<tr>
+  							<td><br/></td>
+  							<td><input type="checkbox" name="topp" value="Diced Tomatoes" />Diced Tomatoes<br/></td>
+  						</tr>
+  						<tr>
+  							<td><br/></td>
+  							<td><input type="checkbox" name="topp" value="Hot Sauce" />Hot Sauce<br/></td>
+  						</tr>
+  						</table>
+  					</div>
+  				</div>	
+  			</div>
+  			<div id="click">
+				<button  class="c" type="submit">Build</button>
+				<button  class="c" type="reset">Cancel</button>
+			</div>	
+  		</form>		
+  	</div>
+  </body>
+</html>
